@@ -1,0 +1,28 @@
+{
+  "name": "@gittielabs/nextjs-fastapi-auth-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Authentication library for Next.js + FastAPI applications",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gittielabs/nextjs-fastapi-auth.git"
+  },
+  "author": "GittieLabs",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "clean": "npm run clean --workspaces",
+    "publish:all": "npm run build && npm publish --workspaces"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0",
+    "prettier": "^3.1.0",
+    "eslint": "^8.55.0"
+  }
+}
