@@ -180,7 +180,7 @@ export async function getSupabaseSession(
   supabaseUrl: string,
   supabaseKey: string
 ) {
-  const cookieStore = cookies()
+  const cookieStore = await cookies()
 
   const supabase = createServerClient(
     supabaseUrl,
