@@ -48,3 +48,5 @@ pnpm-lock.yaml
 yarn.lock
 package-lock.json
 poetry.lock
+.work-in-progress.md
+PUBLISHING.md
